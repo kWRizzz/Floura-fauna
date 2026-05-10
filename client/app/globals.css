@@ -14,7 +14,11 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: url("/flower/bgimg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-outfit), sans-serif;
   overflow-x: hidden;
