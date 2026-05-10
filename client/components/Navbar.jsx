@@ -21,16 +21,13 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#1A251E]/90 backdrop-blur-md py-4 shadow-lg shadow-black/10" : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#1A251E]/90 backdrop-blur-md py-2 shadow-lg shadow-black/10" : "bg-transparent py-3"
+        }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors p-1">
-            <img src="/flower/plant 2.png" alt="FloraVision Logo" className="w-full h-full object-contain" />
-          </div>
+        <Link href="/" className="flex justify-center items-center gap-1 group">
+          <img src="/flower/plant 2.png" alt="FloraVision Logo" className="w-[45px] h-[45px] object-contain drop-shadow-md -ml-2 translate-y-2" />
           <span className="font-semibold text-xl tracking-tight text-white">FloraVision.</span>
         </Link>
 
